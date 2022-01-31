@@ -1,10 +1,60 @@
-<!Doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Usecase Sivu</title>
-<link rel="stylesheet" href="tyyli.css" />
+<!DOCTYPE html>
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tyyli.css">
 </head>
+
+<body onload="paivitaAanet()">
+    <script src="index.js"></script>
+
+    <div class="testilinkki"><a href="adminpanel.html">Ylläpitäjäsivulle</a></div>
+    
+
+    <h1>Äänestys sovellus</h1>
+
+    <div class="aanestys" id="aanestys1">
+        <div class="otsikko">Kissat vai koirat?</div>
+        <div>Äänet:</div>
+
+        <div class="aanet">
+            <div>Kissat:</div>
+            <div id="kissaAanet">10</div> 
+        </div>
+      
+       <div class="aanet">
+        <div>Koirat:</div>
+        <div id="koira">10</div>
+       </div>
+
+        <div onclick="aanestaKissa()" class="teksti" id="1teksti1">Äänestä: kissat</div>
+        <div onclick="aanestaKoira()" class="teksti" id="1teksti2">Äänestä: koirat</div>
+    </div>
+
+
+
+
+    <div class="aanestys" id="aanestys2">
+        <div class="otsikko">Kuuluuko ananas pizzaan</div>
+        <div>Äänet:</div>
+
+        <div class="aanet">
+            <div>Kuuluu:</div>
+            <div id="kuuluu">10</div> 
+        </div>
+      
+       <div class="aanet">
+        <div>Ei kuulu:</div>
+        <div id="eiKuulu">10</div>
+       </div>
+
+        <div onclick="aanestaKuuluu()" class="teksti" id="2teksti1">Äänestä: kuuluu</div>
+        <div onclick="aanestaEiKuulu()" class="teksti" id="2teksti2">Äänestä: ei kuulu</div>
+    </div>
+
+</body>
+
 </html>
