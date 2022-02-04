@@ -9,8 +9,8 @@
 <body>
     <script src="yllapitaja.js"></script>
 
-    <div class="testilinkki"><a href="sivu.html">K‰ytt‰j‰ sivulle</a></div>
-    <h1>ƒ‰nestys sovellus</h1>
+    <div class="testilinkki"><a href="sivu.html">K√§ytt√§j√§ sivulle</a></div>
+    <h1>√Ñ√§nestys sovellus</h1>
 
 
     <div class="aanestys" id="aanestys-luonti">
@@ -24,7 +24,8 @@
         <div id="vaihtoehto2"><textarea id="vaihtoehtoKentta2" placeholder="vaihtoehto 2"></textarea></div>
        </div>
 
-       <div class="luo" id="luo" onclick="luoAanestys(), lisaaNappi()">Luo ‰‰nestys</div>
+       <div class="luo" id="luo" onclick="luoAanestys()">Luo √§√§nestys</div>
+       <input type="button" id="poisto" value="Poista √Ñ√§nestys" onclick="poistaAanestys()" />
     </div>
 
 
@@ -33,17 +34,31 @@
 
         <div class="aanet">
             <div>Kissat:</div>
-            <div>101 ‰‰nt‰</div> 
+            <div>101 √§√§nt√§</div> 
         </div>
       
        <div class="aanet">
         <div>Koirat:</div>
-        <div>100 ‰‰nt‰</div>
+        <div>100 √§√§nt√§</div>
        </div>
-<button class="poistaanestys">Poista ƒ‰nestys</button>
+       <input type="button" value="Poista √Ñ√§nestys" onclick="poistaAanestys2()" />
 
     </div>
 
+    <div class="aanestys" id="aanestys2">
+        <div class="otsikko">Konsolit vai tietokoneet?</div>
+        <div>√Ñ√§net:</div>
+
+        <div class="aanet">
+            <div>Konsolit:</div>
+            <div id="konsolit">10</div> 
+        </div>
+      
+       <div class="aanet">
+        <div>Tietokoneet:</div>
+        <div id="tietokoneet">10</div>
+       </div>
+       <input type="button" value="Poista √Ñ√§nestys" onclick="poistaAanestys3()" />
     </div>
 </body>
 </html>

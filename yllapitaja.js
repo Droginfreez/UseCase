@@ -9,7 +9,7 @@ function luoAanestys(){
     console.log(vaihtoehto2);
 
     if(otsikko == "" || vaihtoehto1 == "" || vaihtoehto2 == ""){
-        alert("Kent‰t ei saa olla tyhji‰!");
+        alert("Kent√§t ei saa olla tyhji√§!");
     }else{
         document.getElementById("otsikkoKentta").style.display = "none";
         document.getElementById("vaihtoehtoKentta1").style.display = "none";
@@ -17,7 +17,24 @@ function luoAanestys(){
         document.getElementById("luo").style.display = "none";
 
         document.getElementById("otsikko1").innerHTML = otsikko;
-        document.getElementById("vaihtoehto1").innerHTML = vaihtoehto1 + ": 0 ƒ‰nt‰";
-        document.getElementById("vaihtoehto2").innerHTML = vaihtoehto2  + ": 0 ƒ‰nt‰";
+        document.getElementById("vaihtoehto1").innerHTML = vaihtoehto1 + ": 0 √Ñ√§nt√§";
+        document.getElementById("vaihtoehto2").innerHTML = vaihtoehto2  + ": 0 √Ñ√§nt√§";
+        a = 1;
     }
 }
+function poistaAanestys() { if (a == 1) {  
+    var elem = document.getElementById('aanestys-luonti');
+    elem.parentNode.removeChild(elem);
+   }
+}
+
+
+   function poistaAanestys2() {
+    var elem2 = document.getElementById('aanestys1');
+    elem2.parentNode.removeChild(elem2);
+   }
+   function poistaAanestys3() {
+    var elem3 = document.getElementById('aanestys2');
+    elem3.parentNode.removeChild(elem3);
+   }
+    

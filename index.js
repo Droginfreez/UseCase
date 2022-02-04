@@ -1,19 +1,19 @@
 var kissaAanet = 5;
 var koiraAanet = 5;
-var kuuluuAanet = 10;
-var eiKuuluAanet = 10;
+var konsolit = 10;
+var Tietokoneet = 10;
 var onAanestetty1 = false;
 var onAanestetty2 = false;
 
 function paivitaAanet(){
     var kissa = document.getElementById("kissaAanet");
     var koira = document.getElementById("koira");
-    var kuuluu = document.getElementById("kuuluu");
-    var eiKuulu = document.getElementById("eiKuulu");
+    var kuuluu = document.getElementById("konsoli");
+    var eiKuulu = document.getElementById("tietokone");
     kissa.innerHTML = kissaAanet;
     koira.innerHTML = koiraAanet;
-    kuuluu.innerHTML = kuuluuAanet;
-    eiKuulu.innerHTML = eiKuuluAanet;
+    kuuluu.innerHTML = konsolit;
+    eiKuulu.innerHTML = Tietokoneet;
 }
 
 function aanestaKoira(){
@@ -22,7 +22,7 @@ function aanestaKoira(){
         document.getElementById("1teksti1").style.backgroundColor = "#A9A9A9";
         document.getElementById("1teksti2").style.backgroundColor = "#A9A9A9";
     }else{
-        window.alert("Olet jo √?√?nest√?nyt");
+        window.alert("Olet jo √Ñ√§nest√§nyt");
     }
     onAanestetty1 = true;
     paivitaAanet();
@@ -34,31 +34,31 @@ function aanestaKissa(){
         document.getElementById("1teksti1").style.backgroundColor = "#A9A9A9";
         document.getElementById("1teksti2").style.backgroundColor = "#A9A9A9";
     }else{
-        window.alert("Olet jo ƒ‰nest‰nyt");
+        window.alert("Olet jo √Ñ√§nest√§nyt");
     }
     onAanestetty1 = true;
     paivitaAanet();
 }
 
-function aanestaKuuluu(){
+function aanestaKonsoli(){
     if(onAanestetty2==false){
-        kuuluuAanet++;
+        konsolit++;
         document.getElementById("2teksti1").style.backgroundColor = "#A9A9A9";
         document.getElementById("2teksti2").style.backgroundColor = "#A9A9A9";
     }else{
-        window.alert("Olet jo ƒ‰nest‰nyt");
+        window.alert("Olet jo √Ñ√§nest√§nyt");
     }
     onAanestetty2 = true;
     paivitaAanet();
 }
 
-function aanestaEiKuulu(){
+function aanestaTietokone(){
     if(onAanestetty2==false){
-        eiKuuluAanet++;
+        Tietokoneet++;
         document.getElementById("2teksti1").style.backgroundColor = "#A9A9A9";
         document.getElementById("2teksti2").style.backgroundColor = "#A9A9A9";
     }else{
-        window.alert("Olet jo ƒ‰nest‰nyt");
+        window.alert("Olet jo √Ñ√§nest√§nyt");
     }
     onAanestetty2 = true;
     paivitaAanet();
