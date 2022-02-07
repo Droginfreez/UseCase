@@ -33,3 +33,13 @@ Jälkiehto: Poisti haluamansa äänestyksen
 Käyttötapauksen kulku: Painaa poista äänestys- nappia haluamansa äänestyksen alta
 Poikkeuksellinen toiminta: Äänestyksiä ei ole poistettavaksi
 
+
+Käyttötapauksen nimi: Ylläpitopaneeli
+Käyttäjät: Ylläpitäjä
+Laukaisija: Halu muokata äänestyksiä
+Esiehto: On ylläpitäjä
+Jälkiehto: Muokkasi äänestyksiä
+Käyttötapauksen kulku: Ylläpitäjä menee ylläpitopaneeliin, lisää tai poistaa haluamiaan äänestyksiä
+Poikkeuksellinen toiminta: Käyttäjä ei ole ylläpitäjä
+
+
